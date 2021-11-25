@@ -15,3 +15,4 @@ Jenkins installation in UBUNTU 18.04
    46  sudo ufw status
    47  cat /var/lib/jenkins/secrets/initialAdminPassword
    48  history
+   49 sudo cat /var file for admin password
