@@ -1,0 +1,17 @@
+Jenkins installation in UBUNTU 18.04
+   33  sudo apt update
+   34  sudo apt upgrade -y
+   35  sudo systemctl reboot
+   36  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+   37  echo "deb https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list
+   38  sudo apt update
+   39  sudo apt install default-jdk
+   40  sudo update-alternatives --config java
+   41  sudo apt install jenkins
+   42  sudo  ufw enable
+   43  sudo ufw allow 8080
+   44  sudo ufw status
+   45  sudo ufw allow ssh
+   46  sudo ufw status
+   47  cat /var/lib/jenkins/secrets/initialAdminPassword
+   48  history
